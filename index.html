@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر القهوة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الرأس -->
+    <header>
+        <div class="logo">☕ متجر القهوة</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">منتجاتنا</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+                <li><a href="#cart" class="cart-btn">🛒 السلة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <main>
+        <section id="home" class="hero">
+            <h1>أفضل أنواع القهوة الطازجة!</h1>
+            <p>استمتع بمذاق القهوة الأصلي مع خصومات حصرية.</p>
+            <a href="#products" class="btn">استعرض المنتجات</a>
+        </section>
+
+        <!-- المنتجات -->
+        <section id="products">
+            <h2>منتجاتنا</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/coffee1.jpg" alt="قهوة عربية">
+                    <h3>قهوة عربية</h3>
+                    <p>قهوة عربية أصيلة بطعم لا يُقاوم.</p>
+                    <span class="price">150 جنيه</span>
+                    <button class="btn add-to-cart" data-name="قهوة عربية" data-price="150">إضافة للسلة</button>
+                </div>
+                <div class="product">
+                    <img src="images/coffee2.jpg" alt="قهوة إسبريسو">
+                    <h3>قهوة إسبريسو</h3>
+                    <p>إسبريسو مكثف لعشاق القهوة القوية.</p>
+                    <span class="price">90 جنيه</span>
+                    <button class="btn add-to-cart" data-name="قهوة إسبريسو" data-price="90">إضافة للسلة</button>
+                </div>
+                <div class="product">
+                    <img src="images/coffee3.jpg" alt="حبوب قهوة">
+                    <h3>حبوب قهوة</h3>
+                    <p>حبوب مختارة بعناية لعشاق القهوة.</p>
+                    <span class="price">240 جنيه</span>
+                    <button class="btn add-to-cart" data-name="حبوب قهوة" data-price="240">إضافة للسلة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- سلة المشتريات -->
+        <section id="cart" class="cart-section">
+            <h2>سلة المشتريات</h2>
+            <div class="cart-items">
+                <!-- المنتجات ستُضاف ديناميكيًا هنا -->
+            </div>
+            <div class="cart-total">
+                الإجمالي: <span id="total-price">0</span> جنيه
+            </div>
+            <a href="payment.html" class="btn">الدفع باستخدام فودافون كاش أو إنستا باي</a>
+        </section>
+<!-- قسم من نحن -->
+<section id="about" class="about-section">
+    <h2>من نحن</h2>
+    <p>
+        نحن متجر متخصص في تقديم أجود أنواع القهوة لعشاق القهوة المميزة. هدفنا هو تزويد عملائنا 
+        بأفضل تجربة قهوة، سواء كانت حبوب قهوة مختارة بعناية أو قهوة جاهزة ذات جودة عالية. ☕
+    </p>
+    <p>
+        في متجرنا، نؤمن بأن القهوة ليست مجرد مشروب، بل هي تجربة مليئة بالمذاق والشعور. 💚
+    </p>
+</section>
+
+<!-- قسم تواصل معنا -->
+<section id="contact" class="contact-section">
+    <h2>تواصل معنا</h2>
+    <form>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+
+        <button type="submit" class="btn">إرسال</button>
+    </form>
+</section>
+    </main>
+
+    <!-- التذييل -->
+    <footer>
+        <p>&copy; 2025 - جميع الحقوق محفوظة. متجر القهوة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدفع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☕ متجر القهوة</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="payment.html">الدفع</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="payment-section">
+        <!-- شريط حالة الدفع -->
+        <div class="progress-bar">
+            <div class="step completed">اختيار المنتجات</div>
+            <div class="step active">إدخال معلومات الدفع</div>
+            <div class="step">إتمام الطلب</div>
+        </div>
+
+        <!-- عنوان الصفحة -->
+        <h1>الدفع باستخدام فودافون كاش أو إنستا باي</h1>
+        <p>يرجى اختيار طريقة الدفع المناسبة وإتمام العملية.</p>
+
+        <!-- ملخص الطلب -->
+        <div class="order-summary">
+            <h2>ملخص الطلب</h2>
+            <ul>
+                <li>قهوة عربية × 2 - <strong>300 جنيه</strong></li>
+                <li>حبوب قهوة × 1 - <strong>240 جنيه</strong></li>
+            </ul>
+            <p>الإجمالي: <strong>540 جنيه</strong></p>
+        </div>
+
+        <!-- طرق الدفع -->
+        <div class="payment-methods">
+            <!-- فودافون كاش -->
+            <div class="method">
+                <h2><img src="images/vodafone-cash.png" alt="فودافون كاش" class="icon"> فودافون كاش</h2>
+                <p>رقم فودافون كاش للدفع: <strong>01144208983</strong></p>
+                <p>يرجى تحويل المبلغ وإدخال رقم المعاملة في النموذج أدناه.</p>
+                <form>
+                    <label for="vodafone-transaction">رقم المعاملة:</label>
+                    <input type="text" id="vodafone-transaction" name="vodafone-transaction" required>
+                    <button type="submit" class="btn">تأكيد الدفع</button>
+                </form>
+            </div>
+
+            <!-- إنستا باي -->
+            <div class="method">
+                <h2><img src="images/instapay.png" alt="إنستا باي" class="icon"> إنستا باي</h2>
+                <p>رقم حساب إنستا باي: <strong>12345678901234</strong></p>
+                <p>يرجى تحويل المبلغ باستخدام تطبيق إنستا باي وإدخال رقم التحويل أدناه.</p>
+                <form>
+                    <label for="instapay-transaction">رقم التحويل:</label>
+                    <input type="text" id="instapay-transaction" name="instapay-transaction" required>
+                    <button type="submit" class="btn">تأكيد الدفع</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - جميع الحقوق محفوظة. متجر القهوة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
